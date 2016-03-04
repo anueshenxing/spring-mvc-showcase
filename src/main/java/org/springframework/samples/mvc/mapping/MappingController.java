@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -60,6 +61,16 @@ public class MappingController {
 	@RequestMapping(value="/mapping/produces", method=RequestMethod.GET, produces=MediaType.APPLICATION_XML_VALUE)
 	public @ResponseBody JavaBean byProducesXml() {
 		return new JavaBean();
+	}
+
+	@RequestMapping(value="test", method = RequestMethod.GET)
+	public @ResponseBody String test(Model model){
+		return "Hello world test!";
+	}
+
+	@RequestMapping(value="test1", method = RequestMethod.GET)
+	public String test1(){
+		return "views/html";
 	}
 
 }
