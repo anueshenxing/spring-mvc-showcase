@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zhang_plot.controller;
+package com.graduate.zhang.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

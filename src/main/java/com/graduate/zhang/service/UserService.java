@@ -1,7 +1,7 @@
-package org.springframework.samples.mvc.zhang.service;
+package com.graduate.zhang.service;
 
-import org.springframework.samples.mvc.zhang.model.User;
-import org.springframework.samples.mvc.zhang.repository.UserDao;
+import com.graduate.zhang.model.User;
+import com.graduate.zhang.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

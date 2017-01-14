@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zhang.model;
+package com.graduate.zhang.model;
 import com.google.code.morphia.annotations.Id;
 import com.google.code.morphia.annotations.Indexed;
 import org.bson.types.ObjectId;

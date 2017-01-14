@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 张晓磊
@@ -11,6 +12,7 @@
     <title>test_Echat.js</title>
 </head>
 <body>
-
+    <a href="<c:url value="/plot/plot_test" />">complete network</a>
+    <a href="<c:url value="/mongodb/test" />">mongo test</a>
 </body>
 </html>

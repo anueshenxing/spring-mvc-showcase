@@ -1,11 +1,11 @@
-package org.springframework.samples.mvc.zhang.repository;
+package com.graduate.zhang.repository;
 
 import com.google.code.morphia.Datastore;
 import com.google.code.morphia.Morphia;
 import com.google.code.morphia.query.Query;
 import com.mongodb.MongoClient;
-import org.springframework.samples.mvc.zhang.model.User;
-import org.springframework.samples.mvc.zhang.util.GlobalConst;
+import com.graduate.zhang.model.User;
+import com.graduate.zhang.util.GlobalConst;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -54,18 +54,18 @@ public class UserDao {
 
     public static void main(String[] args){
         UserDao userDao = new UserDao();
-        List<User> userList = userDao.findUsersByMultiple("张晓磊","123456");
-        try {
-            for (User user:userList) {
-                System.out.println(user.getUsername() + ", " +user.getPassword());
-            }
-        } catch (Exception e) {
-            System.out.println("没有找到！");
-        }
-//        User user = new User();
-//        user.setUsername("张晓磊");
-//        user.setPassword("654321");
-//        userDao.save(user);
-//        System.out.println("save data successfuly");
+//        List<User> userList = userDao.findUsersByMultiple("张晓磊","123456");
+//        try {
+//            for (User user:userList) {
+//                System.out.println(user.getUsername() + ", " +user.getPassword());
+//            }
+//        } catch (Exception e) {
+//            System.out.println("没有找到！");
+//        }
+        User user = new User();
+        user.setUsername("张晓磊");
+        user.setPassword("654321");
+        userDao.save(user);
+        System.out.println("save data successfuly");
     }
 }

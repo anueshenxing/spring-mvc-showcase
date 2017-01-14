@@ -1,7 +1,7 @@
-package org.springframework.samples.mvc.zhang.repository;
+package com.graduate.zhang.repository;
 
 import com.mongodb.MongoClient;
-import org.springframework.samples.mvc.zhang.util.GlobalConst;
+import com.graduate.zhang.util.GlobalConst;
 
 /**
  * Created by zengshuai on 9/5/15.

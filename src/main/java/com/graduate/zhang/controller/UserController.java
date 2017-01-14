@@ -1,7 +1,7 @@
-package org.springframework.samples.mvc.zhang.controller;
+package com.graduate.zhang.controller;
 
-import org.springframework.samples.mvc.zhang.model.User;
-import org.springframework.samples.mvc.zhang.service.UserService;
+import com.graduate.zhang.model.User;
+import com.graduate.zhang.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

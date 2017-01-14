@@ -14,6 +14,5 @@
 </head>
 <body>
     <c:out value="${user.username}"/>
-    <p>dfasfdhuisaghfiasugfiuasghi</p>
 </body>
 </html>
